@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Gross Pay Calculator</title>
+    
+</head>
+
+<body>
+    <div class="navbar" style="background-color: #000000;">
+        <a class="navbar-brand" href="#"><img style="margin: 5px;"src="https://cdn.discordapp.com/attachments/978688974279282759/995922104866328636/unknown.png" alt="Black-And-Grey-Minimalist-Modern-Elegant-Simple-Restaurant-Logo" border="0" width="90px;" height="90px;">
+        </a> 
+        
+        
+        <button class = "btn" onclick="myFunction()">Change Theme</button>
+        
+        <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+
+        </div>
+        <div class="container">
+        <form>
+            
+            <h4 class="header4"> Gross Pay Calculator</h4>
+            <div class="Container">
+            
+             <label for="Stime">Straight Time (ST)</label><br>
+             <label for="hours">Hours:</label><br>
+             <input type="number" id="hours" name="hours" value=""><br>
+             <label for="rate">Rate/Hour: $</label><br>
+             <input type="number" id="RThours" name="RThours" value=""><br>           
+            </div> 
+
+            <br>
+            <br>
+            <div class="Container">
+                <label for="Overtime">Overtime (OT)</label><br>
+                <label for="OThours">OT Hours:</label> <br>
+                <input type="number" id="OThours" name="OThours" value=""><br>
+                <label for="OTrate">OT Rate: </label> * ST<br>
+                <input type="number" id="OTrate" name="OTrate" value=""><br>           
+                </div>
+
+                <br>
+                <br>
+
+            
+                <div class="Container">
+                    <label for="Double Time">Double Time (DT)</label><br>
+                    <label for="DThours">DT Hours:</label><br>
+                    <input type="number" id="DThours" name="DThours" value=""><br>
+                    <label for="DTrate">DT Rate: </label> * ST<br>
+                    <input type="number" id="DTrate" name="DTrate" value=""><br>           
+                </div>    
+
+                <br>
+                <br>
+
+
+
+            
+            <div class="d-flex">
+                <button type="button" id="submit" >Calculate</button>
+                <button class="Clear">Clear</button>
+            </div>
+            <br>
+            <br>        
+            <div class="d-flex">
+                <label for="Output">Answer:</label>   
+               <h1 id="grossPayResult"></h1>
+            </div>
+
+
+            
+        </div>
+          </form> 
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="app.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --green: #00FF00;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+.dark-mode {
+    background-color: rgb(26, 25, 25);
+    color: white;
+  }
+
+.navbar{
+    width: 100%
+}
+
+.btn{
+    border-radius: 20px;
+    font-size: 15px;
+    float: right;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 10px;
+    color: rgb(3, 3, 3);
+    background-color: #09ff00;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.mybutton1{
+    padding: 30px;
+    display:block;
+    background-color: green;
+    color: white;
+    text-align:center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
